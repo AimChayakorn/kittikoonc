@@ -19,7 +19,7 @@ export default function SideBar() {
             <Link href='' className={styles.link}>🌟 Favourite</Link>
             <Link href='' className={styles.link}>📝 Tasks</Link>
         </div>
-        <Link href='' className={styles.logout}>Log out</Link>
+        <Link href='/login' className={styles.logout}>Log out</Link>
         </div>
     );
 }

@@ -10,7 +10,7 @@ export default function Login() {
         <p className={styles.password}>Password</p>
         <input type="password" className={styles.inputpassword} />
         <button className={styles.button}>Login</button>
-        <Link href='' className={styles.createaccount}>Don't have account? Create account here</Link>
+        <Link href='/signup' className={styles.createaccount}>Don't have account? Create account here</Link>
       </div>
     </main>
   )
