@@ -1,0 +1,132 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    background-color: #ffffff;
+    padding: 6rem;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 226px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #83A2FE, #ffffff);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .profilecon {
+    width: 107px;
+    height: 107px;
+    overflow: hidden;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #2ba2bc;
+    border-color: black;
+    border-style:outset;
+    border-width: 2px;
+  }
+  
+  .menu {
+    padding: 30px;
+    display:block;
+    justify-content: space-between;
+  }
+  
+  .link {
+    padding: 10px;
+    font-size: 16px;
+    color: black;
+    display: block;
+  }
+  
+  .link:hover {
+    color:cornflowerblue;
+  }
+  
+  .logout {
+    padding: 10px;
+    font-size: 14px;
+    color: black;
+    align-self: flex-end;
+    margin-top: auto;
+  }
+  
+  .logout:hover {
+    text-decoration: underline;
+    color: red;
+  }
+  
+  .profilepic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  .design {
+    height: 100%;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 226px;
+    
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    /* border-color: black;
+    border-style: outset;
+    border-width: 5px; */
+  }
+  
+  .head1 {
+    padding: 10px;
+    font-size: 24px;
+    color: black;
+    display: block;
+  }
+  
+  .head2 {
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    display: block;
+  }
+  
+  .cont {
+    height: 195px;
+    width: 77vw;
+    position: relative;
+    background-color: #f9f6f6;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .alldesigns {
+    height: 40vh;
+    width: 77vw;
+    position: relative;
+    background-color: #f9f6f6;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+  }

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Varela } from 'next/font/google'
 import './globals.css'
 
-const varela = Varela({ weight: '400', subsets: ['latin'] })
+const varela = Varela({ weight: '400', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Create Next App',

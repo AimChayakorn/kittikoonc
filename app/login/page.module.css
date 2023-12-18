@@ -1,0 +1,106 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(circle, #648FE3, #FFFFFF);
+    
+  }
+  
+  .loginpane {
+    height: 555px;
+    width: 529px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  .login {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    align-self: flex-start;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .username {
+    align-self: flex-start;
+    color: black;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .inputusername {
+    height: 35px;
+    width: 100%;
+    background-color: #F2EEEE;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+  }
+  
+  .inputpassword {
+    height: 35px;
+    width: 100%;
+    background-color: #F2EEEE;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+  }
+  
+  .password {
+    align-self: flex-start;
+    color: black;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+
+    position: absolute;
+    bottom: 80px;
+    font-size: 18px;
+    color: black;
+    width: 90%;
+    height: 35px;
+    background-color: #FFD28F;
+    border-radius: 10px;
+    border-style: none;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    background-color: #FFE3BB;
+    color: #534848;
+  }
+
+  .createaccount {
+    font-size: 14px;
+    color: black;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 40px;
+  }
+
+  .createaccount:hover {
+    color: red;
+  }
