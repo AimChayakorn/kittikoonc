@@ -18,7 +18,7 @@ export default function Main() {
     <main className={styles.main}>
       <div className={styles.design}>
       <Link href='/login' className={styles.createaccount}>Login</Link>
-      {haveToken && <p style={{ color: 'red' }}>Have token</p>}
+      {haveToken && <p style={{ color: 'green' }}>Have token</p>}
       {!haveToken && <p style={{ color: 'red' }}>Don't have token</p>}
       </div>
       <button onClick={handleToken}>Check token</button>

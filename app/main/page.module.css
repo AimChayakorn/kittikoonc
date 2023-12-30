@@ -61,6 +61,8 @@
     color: black;
     align-self: flex-end;
     margin-top: auto;
+    background-color: transparent;
+    border-style: none;
   }
   
   .logout:hover {
