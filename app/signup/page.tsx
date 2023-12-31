@@ -32,6 +32,9 @@ export default function Login() {
   const handleError = (e: any) => {
     setError(true);
   }
+  const handleReset = () => {
+    setPostData({username:'',password:'',email:''}); 
+  }
   const handleSignUp = async () => {
     try {
       const res = await axios.post('http://localhost:5500/auth/signup', postData, {
@@ -39,6 +42,7 @@ export default function Login() {
           "Content-Type": "application/json",
         },
       });
+      handleReset();
       handleSuccess(0);
       const { ret } = res.data;
       console.log('Response: ',res.status);
