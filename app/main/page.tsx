@@ -2,13 +2,14 @@
 
 import styles from './page.module.css'
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 export default function Main() {
   const router = useRouter();
   useEffect(() => {
     const token = localStorage.getItem('accessToken');
     if(!token) {
       router.push('/login');
+      localStorage.setItem('loginState','true');
     }
   },[]);
   return (

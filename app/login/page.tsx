@@ -3,7 +3,7 @@
 import axios from 'axios';
 import styles from './page.module.css'
 import Link from 'next/link'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Login() {
   interface PostData {
@@ -15,6 +15,7 @@ export default function Login() {
     password: "",
   });
   const [showError, setError] = useState<Boolean>(false);
+  const [showLogin, setLogin] = useState<Boolean>(false);
   const handlePasswordChange = (e: any) => {
     setPostData({ ...postData, password: e.target.value });
   };
@@ -23,6 +24,9 @@ export default function Login() {
   };
   const handleError = (e: any) => {
     setError(true);
+  }
+  const handleShowLogin = (e: boolean) => {
+    setLogin(e);
   }
   const handleLogin = async () => {
     try {
@@ -36,18 +40,26 @@ export default function Login() {
       const { accessToken } = res.data;
 
       localStorage.setItem('accessToken', accessToken);
-
       window.location.href = '/main'; // Adjust the path as needed
     } catch (error) {
       handleError(error);
       console.error('Error login unsuccessful', error);
     }
   }
-
+  useEffect (() => {
+    const login = localStorage.getItem('loginState');
+    if(login && login == 'true') {
+      handleShowLogin(true);
+    }
+    else {
+      handleShowLogin(false);
+    }
+  },[]);
   return (
     <main className={styles.main}>
       <div className={styles.loginpane}>
         <h1 className={styles.login}>Log in</h1>
+        {showLogin && <p style={{color: 'red' }}>You need to login first</p>}
         <p className={styles.username}>Username</p>
         <input value={postData.username} onChange={handleUsernameChange }className={styles.inputusername} />
         <p className={styles.password}>Password</p>

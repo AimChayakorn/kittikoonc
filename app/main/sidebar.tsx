@@ -8,6 +8,7 @@ export default function SideBar() {
     const handleLogout = () => {
         localStorage.removeItem('accessToken');
         window.location.href = '/';
+        localStorage.setItem('loginState','false');
     }
     return (
         <div className={styles.sidebar}>
