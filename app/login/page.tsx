@@ -59,12 +59,12 @@ export default function Login() {
     <main className={styles.main}>
       <div className={styles.loginpane}>
         <h1 className={styles.login}>Log in</h1>
-        {showLogin && <p style={{color: 'red' }}>You need to login first</p>}
         <p className={styles.username}>Username</p>
         <input value={postData.username} onChange={handleUsernameChange }className={styles.inputusername} />
         <p className={styles.password}>Password</p>
         <input type="password" value={postData.password} onChange={handlePasswordChange} className={styles.inputpassword} />
         {showError && <p style={{ color: 'red' }}>Username and password don't match</p>}
+        {showLogin && <p style={{color: 'red' }}>You need to login first</p>}
         <button onClick={handleLogin} className={styles.button}>Login</button>
         <Link href='/signup' className={styles.createaccount}>Don't have account? Create account here</Link>
       </div>

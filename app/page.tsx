@@ -7,7 +7,6 @@ export default function Main() {
   const [haveToken, setHave] = useState<boolean>(false);
   const handleToken=(e: any)=> {
     const accessToken = localStorage.getItem('accessToken');
-    localStorage.setItem('loginState','true');
     if(accessToken){
       setHave(true);
     }
