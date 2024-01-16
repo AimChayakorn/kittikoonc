@@ -30,7 +30,7 @@ export default function Login() {
   }
   const handleLogin = async () => {
     try {
-      const res = await axios.post('http://localhost:5500/auth/login', postData, {
+      const res = await axios.post('https://www.aimaimngai.men/auth/login', postData, {
         headers: {
           "Content-Type": "application/json",
         },

@@ -37,7 +37,7 @@ export default function Login() {
   }
   const handleSignUp = async () => {
     try {
-      const res = await axios.post('http://localhost:5500/auth/signup', postData, {
+      const res = await axios.post('https://www.aimaimngai.men/auth/signup', postData, {
         headers: {
           "Content-Type": "application/json",
         },

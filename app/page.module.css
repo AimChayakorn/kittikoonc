@@ -1,0 +1,73 @@
+.main {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.topbar {
+    display: flex;
+}
+
+.design {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.intro {
+    display: block;
+}
+
+.welcome {
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bold ;
+    font-size: 48px;
+}
+
+.description {
+    left: 0;
+    color: black;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.link {
+    padding-top: 20px
+}
+
+.ig {
+    margin: 30px;
+}
+
+.fb {
+    margin: 30px;
+}
+
+.x {
+    margin: 30px;
+}
+
+.github {
+    margin: 30px;
+}
+
+.project {
+    position:absolute;
+    top: 56px;
+    color: black;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+.project:hover {
+    color: #83A2FF;
+    text-decoration: underline;
+}
+
+.profilepic {
+    margin-left: 50px;
+}
