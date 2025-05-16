@@ -1,4 +1,4 @@
-FROM node:18-slim AS builder
+FROM node:24-slim AS builder
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-FROM node:18-slim AS runner
+FROM node:24-slim AS runner
 
 WORKDIR /app
 
@@ -20,6 +20,7 @@ COPY --from=builder /app/public public
 COPY --from=builder /app/node_modules node_modules
 
 ENV NODE_ENV=production
+ENV PATH="/app/node_modules/.bin:$PATH"
 EXPOSE 3000
 
-CMD ["npm", "run", "start"]
+CMD ["next", "start"]
