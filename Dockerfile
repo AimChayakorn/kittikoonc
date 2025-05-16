@@ -11,7 +11,6 @@ COPY . .
 RUN npm run build
 
 ENV NODE_ENV=production
-ENV PATH="/app/node_modules/.bin:$PATH"
 EXPOSE 3000
 
-CMD ["next", "start"]
+CMD ["npm", "run", "start"]
