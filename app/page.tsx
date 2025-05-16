@@ -34,9 +34,6 @@ export default function Main() {
           />
         </div>
       </div>
-      <div className={styles.topbar}>
-        <Link href='/login' className={styles.project}>Personal Project</Link>
-      </div>
     </main>
   )
 }
