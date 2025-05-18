@@ -1,10 +1,16 @@
+'use client';
+import { useState } from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
 export default function Main() {
+  const [isMenuActive, setIsMenuActive] = useState(false)
+
   return (
     <main className={styles.main}>
-      <div className={styles.design}>
+      <div
+        className={!isMenuActive ? styles.design : styles.inactiveDesign}
+      >
         <div className={styles.intro}>
           <h1 className={styles.welcome}>Welcome,</h1>
           <p className={styles.description}>I’m Chayakorn. This is my personal site.</p>
@@ -32,6 +38,37 @@ export default function Main() {
               className={styles.profilepic}
               alt="Picture of Nong Aim"
           />
+        </div>
+      </div>
+      <div 
+        className={!isMenuActive ? styles.menuicon : styles.inactive}
+        onClick={() => setIsMenuActive(!isMenuActive)}
+      >
+        <Link href=''>
+        <Image
+            src="/menu.png"
+            width={58}
+            height={58}
+            alt="Menu icon"
+        />
+        </Link>
+      </div>
+      <div
+        className={isMenuActive ? styles.sidebarActive : styles.sidebar}
+      >
+        <div
+          className={isMenuActive ? styles.cross : styles.inactive}
+          onClick={() => setIsMenuActive(!isMenuActive)}
+        >
+          <Image src="/cross.png" width={18} height={18} className={styles.cross} alt="Close side bar"/>
+        </div>
+        <div className={styles.menues}>
+          <Link className={styles.project} href="/project">
+            Personal Project
+          </Link>
+          <Link className={styles.resume} href="/resume">
+            Resume
+          </Link>
         </div>
       </div>
     </main>

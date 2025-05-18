@@ -17,6 +17,13 @@
     align-items: center;
 }
 
+.inactiveDesign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    opacity: 0.4;
+}
+
 .intro {
     display: block;
 }
@@ -55,12 +62,66 @@
     margin: 30px;
 }
 
+.profilepic {
+    margin-left: 50px;
+}
+
+.menuicon {
+    position: absolute; /* or fixed */
+    top: 40px;
+    right: 70px;
+    display: flex;
+    z-index: 7;
+}
+
+.inactive {
+    display: none;
+}
+
+.sidebarActive {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #353535;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9;
+}
+
+.sidebar {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: #353535;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9;
+}
+
+.cross {
+    position: absolute;
+    cursor: pointer;
+    top: 24px;
+    right: 24px;
+}
+
+.menues {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    flex-direction: column;
+    margin: 30px;
+}
+
 .project {
-    position:absolute;
-    top: 56px;
-    color: black;
-    font-weight: lighter;
-    font-size: 18px;
+    margin: 5px;
+    text-decoration: none;
 }
 
 .project:hover {
@@ -68,6 +129,12 @@
     text-decoration: underline;
 }
 
-.profilepic {
-    margin-left: 50px;
+.resume {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.resume:hover {
+    color: #83A2FF;
+    text-decoration: underline;
 }
