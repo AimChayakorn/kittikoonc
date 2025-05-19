@@ -1,6 +1,9 @@
 .main {
     overflow-x: hidden;
     overscroll-behavior-x: none;
+    width: 100vw;
+    max-width: 100%;
+    position: relative;
 }
 
 @media (min-width: 393px) {
@@ -13,6 +16,9 @@
         background-color: white;
         overflow-x: hidden;
         overscroll-behavior-x: none;
+        width: 100vw;
+        max-width: 100%;
+        position: relative;
     }
 
     .menuicon {
@@ -49,6 +55,9 @@
         background-color: white;
         overflow-x: hidden;
         overscroll-behavior-x: none;
+        width: 100vw;
+        max-width: 100%;
+        position: relative;
     }
 
     .menuicon {
