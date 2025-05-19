@@ -72,10 +72,10 @@ export default function Main() {
           <Image src="/cross.png" width={18} height={18} className={sidebarStyles.cross} alt="Close side bar"/>
         </div>
         <div className={sidebarStyles.menues}>
-          <Link className={sidebarStyles.project} href="/project">
+          <Link className={sidebarStyles.project} href="">
             Personal Project
           </Link>
-          <Link className={sidebarStyles.resume} href="/resume">
+          <Link className={sidebarStyles.resume} href="">
             Resume
           </Link>
         </div>
