@@ -2,6 +2,8 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
+import designStyles from './styles/design.module.css'
+import sidebarStyles from './styles/sidebar.module.css'
 import Link from 'next/link'
 export default function Main() {
   const [isMenuActive, setIsMenuActive] = useState(false)
@@ -9,33 +11,33 @@ export default function Main() {
   return (
     <main className={styles.main}>
       <div
-        className={!isMenuActive ? styles.design : styles.inactiveDesign}
+        className={!isMenuActive ? designStyles.design : designStyles.inactiveDesign}
       >
-        <div className={styles.intro}>
-          <h1 className={styles.welcome}>Welcome,</h1>
-          <p className={styles.description}>I’m Chayakorn. This is my personal site.</p>
-          <p className={styles.description}>Feel free to visit my other Social media platform.</p>
-          <div className={styles.link}>
+        <div className={designStyles.intro}>
+          <h1 className={designStyles.welcome}>Welcome,</h1>
+          <p className={designStyles.description}>I’m Chayakorn. This is my personal site.</p>
+          <p className={designStyles.description}>Feel free to visit my other Social media platform.</p>
+          <div className={designStyles.link}>
             <Link href='https://www.instagram.com/aimck_'>
-            <Image src="/ig.png" width={46} height={46} className={styles.ig} alt="Link to my IG"/>
+            <Image src="/ig.png" width={46} height={46} alt="Link to my IG"/>
             </Link>
             <Link href='https://www.facebook.com/aim.chayakorn'>
-            <Image src="/fb.png" width={46} height={46} className={styles.fb} alt="Link to my Facebook"/>
+            <Image src="/fb.png" width={46} height={46} alt="Link to my Facebook"/>
             </Link>
             <Link href='https://twitter.com/AimChayakorn'>
-            <Image src="/x.png" width={46} height={46} className={styles.x} alt="Link to my X"/>
+            <Image src="/x.png" width={46} height={46} alt="Link to my X"/>
             </Link>
             <Link href='https://github.com/AimChayakorn'>
-            <Image src="/github.png" width={46} height={46} className={styles.github} alt="Link to my Github"/>
+            <Image src="/github.png" width={46} height={46} alt="Link to my Github"/>
             </Link>
           </div>
         </div>
-        <div className={styles.pic}>
+        <div className={designStyles.pic}>
           <Image
               src="/NAim.png"
               width={417}
               height={417}
-              className={styles.profilepic}
+              className={designStyles.profilepic}
               alt="Picture of Nong Aim"
           />
         </div>
@@ -54,19 +56,19 @@ export default function Main() {
         </Link>
       </div>
       <div
-        className={isMenuActive ? styles.sidebarActive : styles.sidebar}
+        className={isMenuActive ? sidebarStyles.sidebarActive : sidebarStyles.sidebar}
       >
         <div
-          className={isMenuActive ? styles.cross : styles.inactive}
+          className={isMenuActive ? sidebarStyles.cross : styles.inactive}
           onClick={() => setIsMenuActive(!isMenuActive)}
         >
-          <Image src="/cross.png" width={18} height={18} className={styles.cross} alt="Close side bar"/>
+          <Image src="/cross.png" width={18} height={18} className={sidebarStyles.cross} alt="Close side bar"/>
         </div>
-        <div className={styles.menues}>
-          <Link className={styles.project} href="/project">
+        <div className={sidebarStyles.menues}>
+          <Link className={sidebarStyles.project} href="/project">
             Personal Project
           </Link>
-          <Link className={styles.resume} href="/resume">
+          <Link className={sidebarStyles.resume} href="/resume">
             Resume
           </Link>
         </div>

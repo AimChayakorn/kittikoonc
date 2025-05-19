@@ -1,0 +1,42 @@
+@media (min-width: 832px) {  
+    .design {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .inactiveDesign {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        opacity: 0.4;
+    }
+
+    .intro {
+        display: block;
+    }
+
+    .welcome {
+        padding-bottom: 10px;
+        color: black;
+        font-weight: bold ;
+        font-size: 48px;
+    }
+
+    .description {
+        left: 0;
+        color: black;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    .link {
+        display: flex;
+        padding-top: 20px;
+        gap: 30px;
+    }
+
+    .profilepic {
+        margin-left: 50px;
+    }
+}
