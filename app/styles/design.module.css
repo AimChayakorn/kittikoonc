@@ -1,4 +1,4 @@
-@media (min-width: 832px) {  
+@media (min-width: 840px) {  
     .design {
         display: flex;
         flex-direction: row;
@@ -13,6 +13,55 @@
     }
 
     .intro {
+        display: block;
+        order: 1;
+    }
+
+    .welcome {
+        padding-bottom: 10px;
+        color: black;
+        font-weight: bold ;
+        font-size: 48px;
+    }
+
+    .description {
+        left: 0;
+        color: black;
+        font-weight: lighter;
+        font-size: 20px;
+    }
+
+    .link {
+        display: flex;
+        padding-top: 20px;
+        gap: 30px;
+    }
+
+    .pic {
+        order: 2;
+    }
+
+    .profilepic {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 840px) {
+    .design {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inactiveDesign {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.4;
+    }
+
+    .intro {
+        order: 2;
         display: block;
     }
 
@@ -34,6 +83,10 @@
         display: flex;
         padding-top: 20px;
         gap: 30px;
+    }
+
+    .pic {
+        order: 1;
     }
 
     .profilepic {

@@ -55,9 +55,7 @@ export default function Main() {
         />
         </Link>
       </div>
-      <div
-        className={isMenuActive ? sidebarStyles.sidebarActive : sidebarStyles.sidebar}
-      >
+      <div className={isMenuActive ? sidebarStyles.sidebarActive : sidebarStyles.sidebar}>
         <div
           className={isMenuActive ? sidebarStyles.cross : styles.inactive}
           onClick={() => setIsMenuActive(!isMenuActive)}

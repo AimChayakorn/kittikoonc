@@ -1,22 +1,20 @@
-@media (min-width: 832px) {    
-    .main {
-        display: flex;
-        flex-direction:row;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        background-color: white;
-    }
+ .main {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
 
-    .menuicon {
-        position: absolute;
-        top: 40px;
-        right: 70px;
-        display: flex;
-        z-index: 7;
-    }
+.menuicon {
+    position: absolute;
+    top: 40px;
+    right: 70px;
+    display: flex;
+    z-index: 7;
+}
 
-    .inactive {
-        display: none;
-    }
+.inactive {
+    display: none;
 }
