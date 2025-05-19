@@ -18,25 +18,32 @@ export default function Main() {
           <p className={designStyles.description}>I’m Chayakorn. This is my personal site.</p>
           <p className={designStyles.description}>Feel free to visit my other Social media platform.</p>
           <div className={designStyles.link}>
-            <Link href='https://www.instagram.com/aimck_'>
-            <Image src="/ig.png" width={46} height={46} alt="Link to my IG"/>
-            </Link>
-            <Link href='https://www.facebook.com/aim.chayakorn'>
-            <Image src="/fb.png" width={46} height={46} alt="Link to my Facebook"/>
-            </Link>
-            <Link href='https://twitter.com/AimChayakorn'>
-            <Image src="/x.png" width={46} height={46} alt="Link to my X"/>
-            </Link>
-            <Link href='https://github.com/AimChayakorn'>
-            <Image src="/github.png" width={46} height={46} alt="Link to my Github"/>
-            </Link>
+            <div className={designStyles.igCon}>
+              <Link href='https://www.instagram.com/aimck_'>
+              <Image src="/ig.png" fill className={designStyles.ig} alt="Link to my IG"/>
+              </Link>
+            </div> 
+            <div className={designStyles.fbCon}>
+              <Link href='https://www.facebook.com/aim.chayakorn'>
+              <Image src="/fb.png" fill className={designStyles.fb} alt="Link to my Facebook"/>
+              </Link>
+            </div>
+            <div className={designStyles.xCon}>
+              <Link href='https://twitter.com/AimChayakorn'>
+              <Image src="/x.png" fill className={designStyles.x} alt="Link to my X"/>
+              </Link>
+            </div>
+            <div className={designStyles.ghCon}>
+              <Link href='https://github.com/AimChayakorn'>
+              <Image src="/github.png" fill className={designStyles.github} alt="Link to my Github"/>
+              </Link>
+            </div>
           </div>
         </div>
         <div className={designStyles.pic}>
           <Image
               src="/NAim.png"
-              width={417}
-              height={417}
+              fill
               className={designStyles.profilepic}
               alt="Picture of Nong Aim"
           />
@@ -46,14 +53,16 @@ export default function Main() {
         className={!isMenuActive ? styles.menuicon : styles.inactive}
         onClick={() => setIsMenuActive(!isMenuActive)}
       >
-        <Link href=''>
-        <Image
-            src="/menu.png"
-            width={58}
-            height={58}
-            alt="Menu icon"
-        />
-        </Link>
+        <div className={styles.menuPicCon}>
+          <Link href=''>
+          <Image
+              src="/menu.png"
+              fill
+              className={styles.menuPic}
+              alt="Menu icon"
+          />
+          </Link>
+        </div>
       </div>
       <div className={isMenuActive ? sidebarStyles.sidebarActive : sidebarStyles.sidebar}>
         <div

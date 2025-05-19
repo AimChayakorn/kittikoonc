@@ -1,4 +1,4 @@
- .main {
+.main {
     display: flex;
     flex-direction:row;
     align-items: center;
@@ -13,6 +13,17 @@
     right: 70px;
     display: flex;
     z-index: 7;
+}
+
+.menuPicCon {
+    position: relative;
+    width: 58px;
+    height: 58px;
+    aspect-ratio: 1;
+}
+
+.menuPic {
+    object-fit: contain;
 }
 
 .inactive {

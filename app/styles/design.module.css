@@ -38,11 +38,60 @@
     }
 
     .pic {
+        position: relative;
+        width: 417px;
+        height: 417px;
+        aspect-ratio: 1;
         order: 2;
     }
 
     .profilepic {
+        object-fit: contain;
         margin-left: 50px;
+    }
+    
+    .igCon {
+        position: relative;
+        width: 58px;
+        height: 58px;
+        aspect-ratio: 1;
+    }
+
+    .fbCon {
+        position: relative;
+        width: 58px;
+        height: 58px;
+        aspect-ratio: 1;
+    }
+
+    .xCon {
+        position: relative;
+        width: 58px;
+        height: 58px;
+        aspect-ratio: 1;
+    }
+
+    .ghCon {
+        position: relative;
+        width: 58px;
+        height: 58px;
+        aspect-ratio: 1;
+    }
+
+    .ig {
+        object-fit: contain;
+    }
+
+    .fb {
+        object-fit: contain;
+    }
+
+    .x {
+        object-fit: contain;
+    }
+
+    .github {
+        object-fit: contain;
     }
 }
 
@@ -86,10 +135,59 @@
     }
 
     .pic {
+        position: relative;
+        width: 417px;
+        height: 417px;
+        aspect-ratio: 1;
         order: 1;
     }
 
     .profilepic {
         margin-left: 50px;
+        object-fit: contain;
+    }
+
+    .igCon {
+        position: relative;
+        width: 58px;
+        height: 58px;
+        aspect-ratio: 1;
+    }
+
+    .fbCon {
+        position: relative;
+        width: 58px;
+        height: 58px;
+        aspect-ratio: 1;
+    }
+
+    .xCon {
+        position: relative;
+        width: 58px;
+        height: 58px;
+        aspect-ratio: 1;
+    }
+
+    .ghCon {
+        position: relative;
+        width: 58px;
+        height: 58px;
+        aspect-ratio: 1;
+    }
+
+    .ig {
+        object-fit: contain;
+    }
+
+    .fb {
+        object-fit: contain;
+    }
+
+    .x {
+        object-fit: contain;
+    }
+
+    .github {
+        object-fit: contain;
     }
 }
