@@ -191,3 +191,100 @@
         object-fit: contain;
     }
 }
+
+@media (max-width: 393px ) {
+    .design {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inactiveDesign {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0.4;
+    }
+
+    .intro {
+        order: 2;
+        display: block;
+    }
+
+    .welcome {
+        padding-bottom: 10px;
+        color: black;
+        font-weight: bold ;
+        font-size: 32px;
+    }
+
+    .description {
+        left: 0;
+        color: black;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+
+    .link {
+        display: flex;
+        padding-top: 20px;
+        gap: 20px;
+    }
+
+    .pic {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        aspect-ratio: 1;
+        order: 1;
+    }
+
+    .profilepic {
+        margin-left: 50px;
+        object-fit: contain;
+    }
+
+    .igCon {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        aspect-ratio: 1;
+    }
+
+    .fbCon {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        aspect-ratio: 1;
+    }
+
+    .xCon {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        aspect-ratio: 1;
+    }
+
+    .ghCon {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        aspect-ratio: 1;
+    }
+
+    .ig {
+        object-fit: contain;
+    }
+
+    .fb {
+        object-fit: contain;
+    }
+
+    .x {
+        object-fit: contain;
+    }
+
+    .github {
+        object-fit: contain;
+    }
+}
