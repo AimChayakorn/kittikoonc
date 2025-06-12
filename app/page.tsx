@@ -70,7 +70,7 @@ export default function Main() {
           className={isMenuActive ? sidebarStyles.cross : styles.inactive}
           onClick={() => setIsMenuActive(!isMenuActive)}
         >
-          <Image src="/cross.png" width={18} height={18} className={sidebarStyles.cross} alt="Close side bar"/>
+          <Image src="/cross.png" width={18} height={18} className="" alt="Close side bar"/>
         </div>
         <div className={sidebarStyles.menues}>
           <div className={sidebarStyles.projectContainer}>
