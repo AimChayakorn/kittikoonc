@@ -7,6 +7,7 @@ import sidebarStyles from './styles/sidebar.module.css'
 import Link from 'next/link'
 export default function Main() {
   const [isMenuActive, setIsMenuActive] = useState(false)
+  const [isProjectDropdownOpen, setIsProjectDropdownOpen] = useState(false)
 
   return (
     <main className={styles.main}>
@@ -72,9 +73,21 @@ export default function Main() {
           <Image src="/cross.png" width={18} height={18} className={sidebarStyles.cross} alt="Close side bar"/>
         </div>
         <div className={sidebarStyles.menues}>
-          <Link className={sidebarStyles.project} href="">
-            Personal Project
-          </Link>
+          <div className={sidebarStyles.projectContainer}>
+            <div 
+              className={sidebarStyles.project}
+              onClick={() => setIsProjectDropdownOpen(!isProjectDropdownOpen)}
+            >
+              Personal Project
+            </div>
+            {isProjectDropdownOpen && (
+              <div className={sidebarStyles.dropdown}>
+                <Link className={sidebarStyles.dropdownItem} href="/forklift-calculation">
+                  Forklift Calculation
+                </Link>
+              </div>
+            )}
+          </div>
           <Link className={sidebarStyles.resume} href="">
             Resume
           </Link>

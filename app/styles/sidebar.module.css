@@ -46,9 +46,31 @@
 .project {
     margin: 5px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .project:hover {
+    color: #83A2FF;
+    text-decoration: underline;
+}
+
+.projectContainer {
+    position: relative;
+}
+
+.dropdown {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.dropdownItem {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px 0;
+}
+
+.dropdownItem:hover {
     color: #83A2FF;
     text-decoration: underline;
 }
